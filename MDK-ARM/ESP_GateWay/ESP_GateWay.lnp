@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"esp_gateway\startup_stm32f103xb.o"
+"esp_gateway\esp8266.o"
+"esp_gateway\lora.o"
+"esp_gateway\main.o"
+"esp_gateway\stm32f1xx_it.o"
+"esp_gateway\stm32f1xx_hal_msp.o"
+"esp_gateway\stm32f1xx_hal_gpio_ex.o"
+"esp_gateway\stm32f1xx_hal_spi.o"
+"esp_gateway\stm32f1xx_hal.o"
+"esp_gateway\stm32f1xx_hal_rcc.o"
+"esp_gateway\stm32f1xx_hal_rcc_ex.o"
+"esp_gateway\stm32f1xx_hal_gpio.o"
+"esp_gateway\stm32f1xx_hal_dma.o"
+"esp_gateway\stm32f1xx_hal_cortex.o"
+"esp_gateway\stm32f1xx_hal_pwr.o"
+"esp_gateway\stm32f1xx_hal_flash.o"
+"esp_gateway\stm32f1xx_hal_flash_ex.o"
+"esp_gateway\stm32f1xx_hal_exti.o"
+"esp_gateway\stm32f1xx_hal_tim.o"
+"esp_gateway\stm32f1xx_hal_tim_ex.o"
+"esp_gateway\stm32f1xx_hal_uart.o"
+"esp_gateway\system_stm32f1xx.o"
+--strict --scatter "ESP_GateWay\ESP_GateWay.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ESP_GateWay.map" -o ESP_GateWay\ESP_GateWay.axf
